@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>VoicePad</title>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/memopad.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sample.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <h1>VoicePad</h1>
+  </header>
+
+  <main>
+    <textarea id="text_area"></textarea>
+    <div class="msg saved" style="display:none;">SAVED!</div>
+    <div class="msg cleared" style="display:none;">CLEARED!</div>
+    
+    <div class="voice_area">
+        <div class="bar">
+            <label for="rate">SpeedRate <i class="fa fa-clock-o"></i></label>
+            <span id="rate-value">1</span>
+            <button type="button" name="button" id="default-rate">Default</button>
+            <input type="range" value="1" min="0.5" max="2" step="0.01" id="rate">
+            <div class="clearfix"></div>
+        </div>
+        <div class="bar">
+            <label for="pitch">Pitch <i class="fa fa-clock-o"></i></label>
+            <span id="pitch-value">1</span>
+            <button type="button" name="button" id="default-pitch">Default</button>
+            <input type="range" value="1" min="0" max="2" step="0.01" id="pitch">
+            <div class="clearfix"></div>
+        </div>
+        <div class="bar bar-lang">
+            <label for="lang">Language <i class="fa fa-language"></i></label>            
+            <select id="lang">
+                <!-- inserted code here from memopad.js -->
+            </select>
+            <span id="lang-value" style="display:none;"></span>
+        </div>    
+    </div>
+    
+    <div class="speak-area">
+    <ul>
+      <li id="speak"><i class="fa fa-volume-up"></i> Speak</li>
+    </ul>
+    <ul>
+      <li id="pause"><i class="fa fa-pause"></i> Pause</li>
+      <li id="resume"><i class="fa fa-play"></i> Resume</li>
+      <li id="cancel"><i class="fa fa-ban"></i> Cancel</li>
+    </ul>
+    </div>
+
+    <!-- <br> -->
+    <ul>
+      <li id="save"><i class="fa fa-floppy-o"></i> Save</li>
+    </ul>
+    <ul>
+      <li id="clear"><i class="fa fa-trash-o"></i> ClearText</li>
+      <li id="clear-all"><i class="fa fa-trash"></i> ClearAll</li>
+    </ul>
+    <ul>
+      <li id="sample1">Sample1</li>
+      <li id="sample2">Sample2</li>
+    </ul>
+  </main>
+</body>
+
+</html>

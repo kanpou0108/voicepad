@@ -1,0 +1,108 @@
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+}
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+main{
+    border-bottom:1px solid #ccc;
+    position:relative;
+}
+footer{
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+}
+p{
+    font-size:200%;
+    text-align: center;
+    border-bottom:1px solid #fff;
+    height:150px;
+}
+ul{
+    padding: 0;
+    border-top: 1px solid #000000;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+}
+li{
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: #FFF;
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+    height: 24px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+}
+li:hover{
+    background: #0066CC;
+    color:#fff;
+}
+textarea{
+  margin: 3%;
+  width: 95%;
+  height: 180px;
+  /*font-size:80%;*/
+  font-size: 16px;
+  box-shadow: 3px 3px 3px 3px #555;
+}
+
+h1{
+    font-size: 32px;
+}
+
+label {
+  /*float: left;*/
+  width: 20%;
+  line-height: 1.5;
+  font-size: 16px;
+  /*display : inline;*/
+  display: inline-block;
+}
+
+.voice_area {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.bar{
+  /*margin: 10px;*/
+  margin-bottom: 10px;
+  /*overflow: auto;*/
+  /*float: right;*/
+  /*margin: 0 auto ;*/
+  margin-left: 70px;
+  /*margin-right: 70px;*/
+}
+
+.rate-value, .pitch-value {
+  /*float: right;*/
+  width: 5%;
+  line-height: 1.5;
+}
+
+#rate, #pitch, #lang {
+  /*float: right;*/
+  width: 81%;
+}
+
+.msg{
+    /*display: none;*/
+    text-align: center;
+}
+
+.bar-lang{
+    margin-bottom: 30px;
+}
+
+.speak-area{
+    margin-bottom: 30px;
+}
